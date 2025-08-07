@@ -29,6 +29,7 @@ if user_input:
     # ai_message = response['messages'][-1].content
     
     # STREAMING APPLIED HERE
+    
     with st.chat_message('assistant'):
         ai_message = st.write_stream(
           message_chunk.content for message_chunk, metadata in chatbot.stream(
